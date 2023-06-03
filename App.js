@@ -3,8 +3,13 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import HomeScreen from './screens/HomeScreen';
 import StatsScreen from './screens/StatsScreen';
 import AccountScreen from './screens/AccountScreen';
+import { NativeWindStyleSheet } from "nativewind";
 
 const Tab = createMaterialBottomTabNavigator();
+
+NativeWindStyleSheet.setOutput({
+  default: "native",
+});
 
 export default function App() {
   return (
