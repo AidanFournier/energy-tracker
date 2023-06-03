@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Platform } from 'react-native';
+import { Text, View, Button, Platform } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -7,6 +7,7 @@ import Entypo from 'react-native-vector-icons/Entypo';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import * as Device from 'expo-device';
 import * as Notifications from 'expo-notifications';
+// import expoPushTokensApi from './api/expoPushTokens';
 
 import HomeScreen from './screens/HomeScreen';
 import StatsScreen from './screens/StatsScreen';
@@ -44,7 +45,7 @@ async function registerForPushNotificationsAsync() {
       return;
     }
     token = (await Notifications.getExpoPushTokenAsync({
-      projectId: 'b77530dc-352b-424f-f730-8300f975178b',
+      projectId: '1ddc9f59-4b7d-4f74-9f21-6c21ce076fa4',
     })).data;
     console.log(token);
   } else {
