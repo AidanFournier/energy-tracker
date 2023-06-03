@@ -4,10 +4,9 @@ import React,{useState, useEffect} from 'react';
 const HomeScreen = () => {
 
 const getConsumptionFromApi = () => {
-    const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/';
     const apiUrl = 'https://kraken-japan-hackathon-api.onrender.com/products/AGILE-23-06-01/product_rates/consumption_charges';
 
-    return fetch(corsAnywhereUrl + apiUrl)
+    return fetch(apiUrl)
       .then(response => response.json())
       .then(json => {
         return json;
