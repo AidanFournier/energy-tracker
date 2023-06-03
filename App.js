@@ -7,12 +7,13 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import HomeScreen from './screens/HomeScreen';
 import StatsScreen from './screens/StatsScreen';
 import AccountScreen from './screens/AccountScreen';
+import { NativeWindStyleSheet } from "nativewind";
 
 const Tab = createMaterialBottomTabNavigator();
 
-const color = () => {
-
-}
+NativeWindStyleSheet.setOutput({
+  default: "native",
+});
 
 export default function App() {
   return (
@@ -24,9 +25,9 @@ export default function App() {
           barStyle={{ backgroundColor: '#180347' }}
           shifting
         >
-          <Tab.Screen 
-            name="Home" 
-            component={HomeScreen} 
+          <Tab.Screen
+            name="Home"
+            component={HomeScreen}
             options={{
               tabBarLabel: 'Home',
               tabBarIcon: ({ color }) => (
@@ -34,9 +35,9 @@ export default function App() {
               ),
             }}
           />
-          <Tab.Screen 
-            name="Stats" 
-            component={StatsScreen} 
+          <Tab.Screen
+            name="Stats"
+            component={StatsScreen}
             options={{
               tabBarLabel: 'Stats',
               tabBarIcon: ({ color }) => (
@@ -44,9 +45,9 @@ export default function App() {
               ),
             }}
           />
-          <Tab.Screen 
-            name="Account" 
-            component={AccountScreen} 
+          <Tab.Screen
+            name="Account"
+            component={AccountScreen}
             options={{
               tabBarLabel: 'Account',
               tabBarIcon: ({ color }) => (
