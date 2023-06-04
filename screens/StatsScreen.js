@@ -1,4 +1,4 @@
-import { View, Text, Dimensions, StyleSheet} from 'react-native'
+import { View, Text, Dimensions, StyleSheet, TouchableOpacity} from 'react-native'
 import React from 'react'
 
 import { Surface, Button} from "@react-native-material/core";
@@ -30,9 +30,25 @@ const StatsScreen = () => {
 
   return (
     <>
-    <View className="h-full bg-slate-900">
-    <View style={styles.container} >
+        <View className=" mx-60 mt-8">
+        <View className=" flex-row w-32 h-16 border-2 border-violet-700 rounded-full justify-center">
+          {/* <View className="w-8 h-8 rounded-full bg-violet-400"></View> */}
+          <Text className="text-cyan-300 text-[18px] font-bold mt-4 ">10,000</Text>
+        </View>
+      </View>
+      <View className="flex flex-row bg-violet-700 h-12 w-82 rounded-full pt-3 mt-4 mx-5 justify-center">
+        <TouchableOpacity className="mx-6">
+          <Text className="text-violet-100 text-[16px] font-bold">Day</Text>
+        </TouchableOpacity>
+          <TouchableOpacity className="mx-6">
+          <Text className="text-violet-100 text-[16px] font-bold">Week</Text>
+        </TouchableOpacity>
+        <TouchableOpacity className="mx-6">
+          <Text className="text-violet-100 text-[16px] font-bold">Year</Text>
+        </TouchableOpacity>
+      </View>
 
+    <View style={styles.container}>
       <LineChart
     data={{
       labels: ["Mon", "Tues", "Wed", "Thur" ,"Fri","Sat", "Sun"],
