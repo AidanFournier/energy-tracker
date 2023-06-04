@@ -6,7 +6,9 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 
 import {
-  LineChart,
+
+  LineChart
+
 } from "react-native-chart-kit";
 
 const styles = StyleSheet.create({
@@ -43,6 +45,7 @@ const StatsScreen = () => {
           <Text className="text-violet-100 text-[16px] font-bold">Year</Text>
         </TouchableOpacity>
       </View>
+
 
       <View style={styles.container} className="bg-slate-900 flex-1 justify-center align-center px-2">
         <LineChart
@@ -107,6 +110,7 @@ const StatsScreen = () => {
         />
       </View>
 
+
     <View style={styles.container} className="bg-slate-900">
       <Text className="text-white text-[20px] pl-8 mb-6">Suggestions</Text>
       <View style={styles.cards}>
@@ -150,6 +154,7 @@ const StatsScreen = () => {
         </Surface>
       </View>
     </View>
+
   </>
   )
 }
