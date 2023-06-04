@@ -21,7 +21,15 @@ const HomeScreen = () => {
       });
   };
 
-  getProductRateFromApi().then(data => console.log(data));
+  // store the Api fetch result in productRatesHashes
+
+  getProductRateFromApi().then(data => {
+    const productRatesHashes = data;
+    console.log(productRatesHashes);
+  });
+
+  //
+
 
   // consumption fetch
   // return how much kWh used by the consumer in a given period of time
@@ -44,7 +52,13 @@ const HomeScreen = () => {
       });
   };
 
-  getConsumptionFromApi().then(data => console.log(data));
+  // getConsumptionFromApi().then(data => console.log(data));
+
+  // store the Api fetch result in consumptionHashes
+  getConsumptionFromApi().then(data => {
+    const consumptionHashes = data;
+    console.log(consumptionHashes);
+  });
 
   return (
     <View className="flex-row justify-center">
