@@ -7,12 +7,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 
 import {
-  LineChart,
-  BarChart,
-  PieChart,
-  ProgressChart,
-  ContributionGraph,
-  StackedBarChart
+  LineChart
 } from "react-native-chart-kit";
 
 const styles = StyleSheet.create({
@@ -35,7 +30,8 @@ const StatsScreen = () => {
 
   return (
     <>
-    <View style={styles.container}>
+    <View className="h-full bg-slate-900">
+    <View style={styles.container} >
 
       <LineChart
     data={{
@@ -99,7 +95,7 @@ const StatsScreen = () => {
     </View>
 
   <View style={styles.container}>
-  <Text style={{ marginLeft: 5 ,fontSize: 28}}>Suggestions</Text>
+  <Text style={{ marginLeft: 5 ,fontSize: 28, color:"white"}}>Suggestions</Text>
   <View style={styles.cards}>
   <Surface
       elevation={2}
@@ -140,6 +136,7 @@ const StatsScreen = () => {
        </View>
     </Surface>
     </View>
+  </View>
   </View>
   </>
   )
