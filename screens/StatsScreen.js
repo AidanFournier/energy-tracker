@@ -30,8 +30,7 @@ const StatsScreen = () => {
     <>
       <View className="bg-slate-900">
         <View className="mx-60 mt-8">
-          <View className=" flex-row w-32 h-16 border-2 border-violet-700 rounded-full justify-center">
-            {/* <View className="w-8 h-8 rounded-full bg-violet-400"></View> */}
+          <View className=" flex-row w-32 h-16 border-2 border-violet-700 rounded-full justify-center mt-12">
             <Text className="text-cyan-300 text-[18px] font-bold mt-4 ">10,000</Text>
           </View>
         </View>
