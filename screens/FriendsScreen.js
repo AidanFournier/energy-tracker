@@ -8,7 +8,8 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingTop:60,
     gap:12,
-    paddingLeft:18
+    paddingLeft:18,
+
   },
   cards: {
     flex: 1,
@@ -16,6 +17,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
     gap: 20
+  },
+  text:{
+    color:'cyan',
+    fontSize: 16,
+    fontWeight:'bold',
+
   }
 });
 
@@ -26,16 +33,16 @@ const FriendsScreen = () => {
       <Surface
         elevation={2}
         category="medium"
-        style={{ width: 320, height: 116, borderRadius: 40, overflow: "hidden"}}
+        style={{ width: 320, height: 116, borderRadius: 40, overflow: "hidden", backgroundColor: "rebeccapurple"}}
       >
-      <View style={{flexDirection: 'row', gap:40, justifyContent:"space-between" , marginTop: 26, marginLeft:12,marginRight:12,}}>
+      <View style={{flexDirection: 'row', gap:40, justifyContent:"space-between" , marginTop: 26, marginLeft:12,marginRight:12}}>
         <View  style={{flexDirection: 'row', alignItems: 'center', gap: 4}}>
         <Avatar image={{ uri: "https://mui.com/static/images/avatar/1.jpg" }} />
-        <Text style={{fontSize: 16, fontWeight:'bold'}}>John</Text>
+        <Text style={styles.text}>John</Text>
         </View>
         <View style={{flexDirection: 'column', gap:12}} >
-        <View style={{flexDirection: 'row', alignItems: 'center', gap:4}}><Chip label="3000"/><Text>kwH saved</Text></View>
-        <View style={{flexDirection: 'row', alignItems: 'center', gap:4}}><Chip label="1000"/><Text>Points saved</Text></View>
+        <View style={{flexDirection: 'row', alignItems: 'center', gap:4, }}><Chip label="3000" /><Text style={styles.text}>kwH saved</Text></View>
+        <View style={{flexDirection: 'row', alignItems: 'center', gap:4}}><Chip label="1000"  /><Text style={styles.text}>Points saved</Text></View>
         </View>
       </View>
       </Surface>
@@ -43,16 +50,16 @@ const FriendsScreen = () => {
       <Surface
         elevation={2}
         category="medium"
-        style={{ width: 320, height: 116, borderRadius: 40, overflow: "hidden"}}
+        style={{ width: 320, height: 116, borderRadius: 40, overflow: "hidden", backgroundColor: "rebeccapurple"}}
       >
-      <View style={{flexDirection: 'row', gap:40, justifyContent:"space-between" , marginTop: 26, marginLeft:12,marginRight:12,}}>
+      <View style={{flexDirection: 'row', gap:40, justifyContent:"space-between" , marginTop: 26, marginLeft:12,marginRight:12}}>
         <View  style={{flexDirection: 'row', alignItems: 'center', gap: 4}}>
-        <Avatar image={{ uri: "https://mui.com/static/images/avatar/1.jpg" }} />
-        <Text style={{fontSize: 16, fontWeight:'bold'}}>John</Text>
+        <Avatar image={{ uri: "https://mui.com/static/images/avatar/4.jpg" }} />
+        <Text style={styles.text}>Jane</Text>
         </View>
         <View style={{flexDirection: 'column', gap:12}} >
-        <View style={{flexDirection: 'row', alignItems: 'center', gap:4}}><Chip label="3000"/><Text>kwH saved</Text></View>
-        <View style={{flexDirection: 'row', alignItems: 'center', gap:4}}><Chip label="1000"/><Text>Points saved</Text></View>
+        <View style={{flexDirection: 'row', alignItems: 'center', gap:4, }}><Chip label="4000" /><Text style={styles.text}>kwH saved</Text></View>
+        <View style={{flexDirection: 'row', alignItems: 'center', gap:4}}><Chip label="2000"  /><Text style={styles.text}>Points saved</Text></View>
         </View>
       </View>
       </Surface>
@@ -60,16 +67,16 @@ const FriendsScreen = () => {
       <Surface
         elevation={2}
         category="medium"
-        style={{ width: 320, height: 116, borderRadius: 40, overflow: "hidden"}}
+        style={{ width: 320, height: 116, borderRadius: 40, overflow: "hidden", backgroundColor: "rebeccapurple"}}
       >
-      <View style={{flexDirection: 'row', gap:40, justifyContent:"space-between" , marginTop: 26, marginLeft:12,marginRight:12,}}>
+      <View style={{flexDirection: 'row', gap:40, justifyContent:"space-between" , marginTop: 26, marginLeft:12,marginRight:12}}>
         <View  style={{flexDirection: 'row', alignItems: 'center', gap: 4}}>
-        <Avatar image={{ uri: "https://mui.com/static/images/avatar/1.jpg" }} />
-        <Text style={{fontSize: 16, fontWeight:'bold'}}>John</Text>
+        <Avatar image={{ uri: "https://mui.com/static/images/avatar/3.jpg" }} />
+        <Text style={styles.text}>Jill</Text>
         </View>
         <View style={{flexDirection: 'column', gap:12}} >
-        <View style={{flexDirection: 'row', alignItems: 'center', gap:4}}><Chip label="3000"/><Text>kwH saved</Text></View>
-        <View style={{flexDirection: 'row', alignItems: 'center', gap:4}}><Chip label="1000"/><Text>Points saved</Text></View>
+        <View style={{flexDirection: 'row', alignItems: 'center', gap:4, }}><Chip label="6000" /><Text style={styles.text}>kwH saved</Text></View>
+        <View style={{flexDirection: 'row', alignItems: 'center', gap:4}}><Chip label="1000"  /><Text style={styles.text}>Points saved</Text></View>
         </View>
       </View>
       </Surface>
@@ -77,19 +84,24 @@ const FriendsScreen = () => {
       <Surface
         elevation={2}
         category="medium"
-        style={{ width: 320, height: 116, borderRadius: 40, overflow: "hidden"}}
+        style={{ width: 320, height: 116, borderRadius: 40, overflow: "hidden", backgroundColor: "rebeccapurple"}}
       >
-      <View style={{flexDirection: 'row', gap:40, justifyContent:"space-between" , marginTop: 26, marginLeft:12,marginRight:12,}}>
+      <View style={{flexDirection: 'row', gap:40, justifyContent:"space-between" , marginTop: 26, marginLeft:12,marginRight:12}}>
         <View  style={{flexDirection: 'row', alignItems: 'center', gap: 4}}>
-        <Avatar image={{ uri: "https://mui.com/static/images/avatar/1.jpg" }} />
-        <Text style={{fontSize: 16, fontWeight:'bold'}}>John</Text>
+        <Avatar image={{ uri: "https://mui.com/static/images/avatar/2.jpg" }} />
+        <Text style={styles.text}>Jack</Text>
         </View>
         <View style={{flexDirection: 'column', gap:12}} >
-        <View style={{flexDirection: 'row', alignItems: 'center', gap:4}}><Chip label="3000"/><Text>kwH saved</Text></View>
-        <View style={{flexDirection: 'row', alignItems: 'center', gap:4}}><Chip label="1000"/><Text>Points saved</Text></View>
+        <View style={{flexDirection: 'row', alignItems: 'center', gap:4, }}><Chip label="4000" /><Text style={styles.text}>kwH saved</Text></View>
+        <View style={{flexDirection: 'row', alignItems: 'center', gap:4}}><Chip label="1000"  /><Text style={styles.text}>Points saved</Text></View>
         </View>
       </View>
       </Surface>
+
+
+
+
+
     </View>
   );
 };
