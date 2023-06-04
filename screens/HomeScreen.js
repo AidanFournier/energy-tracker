@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
 const HomeScreen = () => {
 
   return (
-    <View className=" flex item-center bg-slate-900 h-full">
+    <View className=" flex item-center bg-slate-900 h-full pt-12">
       <View className=" mx-60 mt-8">
         <View className=" flex-row w-32 h-16 border-2 border-violet-700 rounded-full justify-center">
           {/* <View className="w-8 h-8 rounded-full bg-violet-400"></View> */}

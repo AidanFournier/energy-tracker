@@ -10,9 +10,9 @@ const AccountScreen = () => {
     <View className="h-full bg-slate-900">
         <View className="flex items-center h-full">
 
-          <View className="w-full items-center justify-center bg-violet-950">
+          <View className="w-full items-center justify-center bg-violet-950 pt-14">
           {/* icon */}
-            <View className=" w-32 h-32 rounded-full my-8 border-2 border-violet-700">
+            <View className=" w-32 h-32 rounded-full my-8 border-2 border-violet-700 pt-12">
               {/* <Image source={require('../assets/kraken.png')} />; */}
           </View>
           <Text className="text-violet-100 text-[20px] font-bold mb-8">Kimiko Harada</Text>
