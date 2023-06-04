@@ -21,8 +21,8 @@ const styles = StyleSheet.create({
   }
 });
 
+
 const HomeScreen = () => {
-  const baseUrl = 'https://kraken-japan-hackathon-api.onrender.com';
 
   // product rate fetch
   // return the price (in yen) of kWh (kilowatt-hour)/ 30 minutes slot for the next 10 days
