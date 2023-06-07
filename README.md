@@ -16,7 +16,7 @@
 * [Credits](#credits)
 
 ## Introduction
-This mobile native app was built over the course of 2 and a half days, during Builders Weekend 2023. Our team chose to tackle Kraken Technologies' challenge on energy: How do you encourage and empower people and businesses to use energy at the cheapest and greenest times?
+This mobile native app was built over the course of two and a half days, during the Tokyo hackathon [Builders Weekend 2023](https://www.buildersweekend.co/). Our team chose to tackle Kraken Technologies' challenge on energy: How do you encourage and empower people and businesses to use energy at the cheapest and greenest times?
 
 We wanted to make a user-facing app that would make it easy and fun for regular people to reduce their energy use. We all have bill tracking apps, whether it be for phone data usage or gas bills. How often to we actually open these apps?
 
@@ -40,7 +40,7 @@ Or, if you already have the Expo Go app on your phone, you can scan this QR code
 <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> 
 </a> <a href="https://git-scm.com/" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="git" width="40" height="40"/> </a> 
 
-## Team Members
+## Team
 - [Pira](https://www.linkedin.com/in/pirada-jirawatvisut-b821081a1/) - Product Design
 - [Tash](https://github.com/tashseb) - Front-End
 - [Joshua](https://github.com/joshnsw) - Front-End
